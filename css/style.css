@@ -57,6 +57,38 @@ a {
   margin: 0 auto;
 }
 
+@media (max-width: 992px) {
+  .container {
+    width: 750px;
+  }
+  .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .logo {
+    display: none;
+  }
+  .button-o {
+    font-size: 10px;
+  }
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .menu__link {
+    margin-bottom: 10px;
+  }
+}
+
 .navbar {
   position: fixed;
   background: #ffffff;
@@ -105,10 +137,6 @@ a {
   visibility: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-
-.menu_active {
-  visibility: visible;
 }
 
 .menu__nav {

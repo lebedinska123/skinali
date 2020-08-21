@@ -29,3 +29,26 @@ a
 .container
     max-width: 1170px
     margin: 0 auto
+
+@media (max-width: 992px)
+    .container
+        width: 750px
+    .navbar
+        &__mobile, &__landline
+            display: none
+
+@media (max-width: 768px)
+    .container
+        width: 90%
+    .logo
+        display: none
+    .button-o
+        font-size: 10px
+
+    .menu
+        &__nav
+            flex-direction: column
+            padding-top: 20px
+            text-align: center
+        &__link
+            margin-bottom: 10px
